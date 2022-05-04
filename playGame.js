@@ -127,7 +127,7 @@ function a() {
         timeDown.innerHTML = i;
         if (i <= 0) {
             clearInterval(timeD);
-            i = 20;
+            i = 16;
             v();
         } else {
             i--;

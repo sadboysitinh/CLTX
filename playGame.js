@@ -47,7 +47,7 @@ xiu.onclick = () => {
     cuoc = 'xiu';
 }
 
-var i = 6;
+var i = 60;
 var timeD;
 var wait;
 
@@ -110,7 +110,7 @@ function v() {
             wtask.innerHTML = '';
             ketqua = '';
             cuoc = '';
-            i = 5;
+            i = 60;
             a();
         } else {
             i--;
@@ -127,7 +127,7 @@ function a() {
         timeDown.innerHTML = i;
         if (i <= 0) {
             clearInterval(timeD);
-            i = 3;
+            i = 20;
             v();
         } else {
             i--;

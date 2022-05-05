@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en, vn" translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chẵn Lẻ Tại Nhà Chơi Tới Già Cũng Không Thắng</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: content-box;
+            transition: 0.5s all ease;
+        }
+
+        body {
+            background: #fe0000;
+        }
+
+        .position-absolute-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .dia {
+            width: 350px;
+            height: 350px;
+            background: #fffdfd;
+            border-radius: 50%;
+            border: 2px solid black;
+
+        }
+
+        .bat {
+            width: 350px;
+            height: 350px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .dit-bat {
+            width: 50%;
+            height: 50%;
+            border: 2px solid black;
+            border-radius: 50%;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+        }
+
+        .mobat {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ddd;
+            padding: 5px;
+            border-radius: 50%;
+            text-align: center;
+            color: red;
+            font-weight: bold;
+        }
+
+        .cham-tron {
+            width: 80px;
+            height: 80px;
+            background: #4f4f4f;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .inkq {
+            width: 150px;
+            background: #1e1e1e;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 50px;
+            border-radius: 16px;
+            font-weight: bold;
+        }
+
+        .xac-dia {
+            position: absolute;
+            bottom: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 8px;
+            font-weight: bold;
+            color: white;
+            background: #303030;
+            width: 80px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .xac-dia:active {
+            background: #4e4e4e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div style="width: 600px; margin: 0 auto">
+            <div style="float: left;" class="inkq">CHẴN</div>
+            <div style="float: right;" class="inkq">LẺ</div>
+            <div style="clear: both"></div>
+        </div>
+
+        <div class="dia position-absolute-center">
+            <div style="top: 70px; left: 70px;" class="cham-tron"></div>
+            <div style="top: 70px; right: 70px;" class="cham-tron"></div>
+            <div style="bottom: 70px; left: 70px;" class="cham-tron"></div>
+            <div style="bottom: 70px; right: 70px;" class="cham-tron"></div>
+        </div>
+
+        <div class="bat position-absolute-center" draggable="true">
+            <div class="dit-bat position-absolute-center">
+                <button class="mobat position-absolute-center">Mở Bát</button>
+            </div>
+        </div>
+
+        <div class="xac-dia" draggable="true">
+            Xắc đĩa
+        </div>
+
+    </div>
+    <script src="ChanLer.js"></script>
+</body>
+
+</html>
